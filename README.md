@@ -4,7 +4,7 @@ A small "stack" language (similar to luac).
 ## "Quick" Docs
 
 ### Stacks
-Stacks are the storage systems if voom. They are premade and can nit be created/deleted.
+Stacks are the storage systems in voom. They are premade and can not be created/deleted.
 These stacks store different data types.
 
 #### String stack
