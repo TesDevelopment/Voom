@@ -82,10 +82,6 @@ func Purify(val string) string{
 	return out
 }
 
-func remove(slice []string, s int) []string {
-	return append(slice[:s], slice[s+1:]...)
-}
-
 func Fill(s []string) string{
 	var out string = ""
 
