@@ -1,0 +1,3 @@
+pushstring Hello, World!
+getglobal prints
+call 0 0

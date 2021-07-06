@@ -1,4 +1,4 @@
-module joshdev.codes/migraine
+module joshdev.codes/voom
 
 go 1.16
 

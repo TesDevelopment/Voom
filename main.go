@@ -14,7 +14,7 @@ func main() {
 
 	script, err := ioutil.ReadFile(goargs[1])
 
-	if err != nil {
+	if err != nil  {
 		return
 	}
 
