@@ -16,15 +16,6 @@ The integer stack stores all ints passed by the user.
 #### Global stack
 The global stack stores functions the user fetches from storage.
 
-### Globals
-Globals are pre-made functions that can be fetched and pushed to the global stack.
-
-#### printS
-printS outputs the string located at the passed location on the string stack.
-
-#### printI
-printInoutputs the string located at the passed location on the int stack.
-
 ### Opcodes
 Opcodes (or tokens) are like the building blocks of all "voom" code.
 The best description of them would be **instructions** that the language understands.
@@ -63,6 +54,15 @@ call 0 5
        ^
        String/Int stack index
 ```
+
+### Globals
+Globals are pre-made functions that can be fetched and pushed to the global stack.
+
+#### printS
+printS outputs the string located at the passed location on the string stack.
+
+#### printI
+printInoutputs the string located at the passed location on the int stack.
 
 #### deferS
 deferS clears the String stack
