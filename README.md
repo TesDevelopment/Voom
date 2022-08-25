@@ -31,14 +31,14 @@ The best description of them would be **instructions** that the language underst
 Opcodes take 0->2 arguments. The first argument will usually index one of the stacks (See above)
 the second arguemnt (if any) varies.
 
-#### pushS
+#### PUSHSTRING
 pushS pushes a string onto the string stack.
 
 ```
 pushS foo
 ```
 
-#### pushI
+#### PUSHINT
 pushI pushes an int onto the int stack.
 
 ```
