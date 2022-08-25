@@ -17,13 +17,9 @@ func parse(opcodes map[string][]string) string {
 	//--Opcodes--\\
 	Opcode("pushstring",pushstring)
 
-	Opcode("pushing",pushint)
+	Opcode("pushint",pushint)
 
 	Opcode("getglobal",getglobal)
-
-	Opcode("deferints",defInt)
-
-	Opcode("deferstrings",defString)
 
 	Opcode("call",call)
 
@@ -31,6 +27,10 @@ func parse(opcodes map[string][]string) string {
 	Global("prints",printS)
 
 	Global("printi",printI)
+
+	Global("deferi",defInt)
+
+	Global("defers",defString)
 
 	//--Actual code--\\
 
@@ -122,18 +122,6 @@ func getglobal(val string,etc ...string) string {
 	return ""
 }
 
-func defInt(val string,etc ...string) string {
-	var temp []string
-	intstack = temp
-	return ""
-}
-
-func defString(val string,etc ...string) string {
-	var temp []string
-	stringstack = temp
-	return ""
-}
-
 func call(val string,etc ...string) string {
 	if !checkInt(val) {
 		return "Invalid global call"
@@ -169,5 +157,17 @@ func printI(loc int) string {
 		return "Attempted to print a nonexistant int"
 	}
 	fmt.Println(intstack[loc])
+	return ""
+}
+
+func defInt(loc int) string {
+	var temp []string
+	intstack = temp
+	return ""
+}
+
+func defString(loc int) string {
+	var temp []string
+	stringstack = temp
 	return ""
 }
